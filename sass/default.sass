@@ -1,0 +1,24 @@
+// Compass imports & mixins
+@import "compass"
+@import "compass/reset"
+
+@mixin data-uri-bg($image, $properties: false)
+  @if $properties != false
+    background: inline-image($image) $properties
+    *background: url($image) $properties
+  @else
+    background: inline-image($image)
+    *background: url($image)
+
+// Variable
+$fontFamily: Georgia, serif
+$fontColor: #111
+
+body
+  font-family: $fontFamily
+  /* The font-size is now 0.625 * 16px = 10px. */
+  font-size: 0.625em
+  /* The leading is now 25 pixels. */
+  line-height: 2.5em
+  color: $fontColor
+  +data-uri-bg("bg.jpg")
