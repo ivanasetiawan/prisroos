@@ -11,8 +11,11 @@
     *background: url($image)
 
 // Variable
-$fontFamily: Georgia, serif
+$fontFamily: 'Simonetta', cursive, Georgia, serif
+$swirlFont: 'Cookie', cursive
+$boldFont: 'Averia Serif Libre', cursive
 $fontColor: #111
+$alertColor: #c30c30
 
 body
   font-family: $fontFamily
@@ -22,3 +25,76 @@ body
   line-height: 2.5em
   color: $fontColor
   +data-uri-bg("bg.jpg")
+
+header
+  padding-top: 372px
+  margin-bottom: 30px
+  background: url("../images/chameleon.jpg") top center no-repeat
+
+  h1
+    width: 440px
+    margin: 0 auto
+    padding: 30px 0
+    position: relative
+    font-size: 15em
+    font-family: $swirlFont
+    line-height: 1
+    color: $alertColor
+    +text-shadow(#fff 1px 1px 1px)
+  
+  span
+    display: block
+    position: absolute
+    color: #3b3b3b
+  
+  .sub
+    top: 0
+    font-family: $boldFont
+    font-size: 0.1667em
+    font-weight: bold
+
+  .by
+    right: 0
+    font-family: $fontFamily
+    font-size: 0.12em
+    font-style: italic
+
+.wrap
+  max-width: 1000px
+  margin: 0 auto
+
+.text
+  font-size: 1.9em
+  line-height: 1.5em
+
+  h2
+    margin: 40px 0 25px
+    text-align: center
+    font-size: 1.5789em
+    font-weight: 700
+
+  p
+    margin: 0 80px 20px
+
+.wide
+  width: 500px
+  position: relative
+  margin: 50px auto
+  overflow: hidden
+
+figcaption
+  width: 100%
+  bottom: 0
+  position: absolute
+  padding: 3px 10px
+  font-size: 0.85em
+  font-style: italic
+  background: $alertColor
+  color: #fff
+
+.letter
+  display: inline-block
+  margin: 13px 6px 0 0
+  float: left
+  font-size: 3em
+  font-weight: 500
