@@ -61,7 +61,7 @@ header
 
 .wrap
   max-width: 1000px
-  margin: 0 auto
+  margin: 0 auto 50px
 
 .text
   font-size: 1.9em
@@ -92,9 +92,28 @@ figcaption
   background: $alertColor
   color: #fff
 
+blockquote
+  width: 36%
+  float: left
+  margin: 0 10px 10px 0
+  font-family: $boldFont
+  font-weight: bold
+  font-size: 1.3em
+  line-height: 1.3em
+
+  &.right
+    float: right
+    text-align: right
+
 .letter
   display: inline-block
-  margin: 13px 6px 0 0
+  margin: 15px 6px 0 0
   float: left
   font-size: 3em
   font-weight: 500
+
+.border
+  width: 100%
+  top: 0
+  position: fixed
+  border-bottom: solid 10px rgba(0, 0, 0, 0.3)
