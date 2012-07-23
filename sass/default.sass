@@ -36,6 +36,12 @@ body
   color: $fontColor
   +data-uri-bg("bg.jpg")
 
+a
+  color: $alertColor
+  text-decoration: none
+  &:hover
+    text-decoration: underline
+
 header
   padding-top: 372px
   margin-bottom: 30px
@@ -145,4 +151,18 @@ blockquote
   width: 100%
   top: 0
   position: fixed
-  border-bottom: solid 10px rgba(0, 0, 0, 0.3)
+
+footer
+  padding: 360px 0 0 690px
+  position: relative
+  min-height: 30px
+  font-size: 1.5em
+  line-height: 1.6em
+
+.chameleon-tree
+  width: 670px
+  height: 390px
+  position: absolute
+  bottom: 0
+  left: 0
+  background: url("../images/chameleon-on-tree.png") no-repeat
