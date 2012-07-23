@@ -17,6 +17,16 @@ $boldFont: 'Averia Serif Libre', cursive
 $fontColor: #111
 $alertColor: #c30c30
 
+::-moz-selection
+  background: $alertColor
+  color: #fff
+  text-shadow: none
+
+::selection
+  background: $alertColor
+  color: #fff
+  text-shadow: none
+
 body
   font-family: $fontFamily
   /* The font-size is now 0.625 * 16px = 10px. */
@@ -41,12 +51,12 @@ header
     line-height: 1
     color: $alertColor
     +text-shadow(#fff 1px 1px 1px)
-  
+
   span
     display: block
     position: absolute
     color: #3b3b3b
-  
+
   .sub
     top: 0
     font-family: $boldFont
@@ -64,23 +74,41 @@ header
   margin: 0 auto 50px
 
 .text
-  font-size: 1.9em
-  line-height: 1.5em
+  font-size: 2.1em
+  line-height: 1.6em
 
   h2
     margin: 40px 0 25px
     text-align: center
     font-size: 1.5789em
     font-weight: 700
+    +text-shadow(#fff 1px 1px 1px)
 
   p
-    margin: 0 80px 20px
+    margin: 0 80px 40px
 
-.wide
-  width: 500px
-  position: relative
-  margin: 50px auto
+.figures
+  margin: 50px 0
   overflow: hidden
+
+  figure
+    float: left
+    margin-left: 20px
+
+    &:first-child
+      margin-left: 0
+
+  figcaption
+    font-size: 1.8em
+
+figure
+  width: 32%
+  position: relative
+  overflow: hidden
+
+  &.wide
+    width: 50%
+    margin: 50px auto
 
 figcaption
   width: 100%
@@ -93,13 +121,14 @@ figcaption
   color: #fff
 
 blockquote
-  width: 36%
+  width: 38%
   float: left
   margin: 0 10px 10px 0
   font-family: $boldFont
   font-weight: bold
   font-size: 1.3em
-  line-height: 1.3em
+  line-height: 1.35em
+  +text-shadow(rgba(0, 0, 0, 0.2) 1px 1px 1px)
 
   &.right
     float: right
@@ -109,7 +138,7 @@ blockquote
   display: inline-block
   margin: 15px 6px 0 0
   float: left
-  font-size: 3em
+  font-size: 3.2em
   font-weight: 500
 
 .border
