@@ -18,7 +18,7 @@
 
 	<body>
 		<div class="wrap">
-			<header>
+			<header id="parallax">
 				<h1>
 					<span class="sub">The World of</span>
 					Pris Roos
@@ -78,20 +78,21 @@
 				<h2>~ Future projects ~</h2>
 
 				<p class="with_letter"><span class="letter">P</span>ris is currently working on her summer collection called "The Big Five". The concept is to draw five most difficult animals in Africa to hunt on foot - her goal is to rise awareness to the people. She is also having a goal to find several galleries to exhibit her artworks. Her latest exhibition's happening on Sunday, July 29th 2012 at Walls Gallery in Amsterdam.</p>
-
-				<blockquote class="full">"Now The Big Five are endangered because of the greed of the human being. In my concept the five wild animals are warriors in the war against hunters. The enemy is put behind bars, or scared to come out to hurt them. The lion, leopard, rhino, elephant and cape buffalo are victorious."
-				<span>~ Pris Roos</span>
-
 			</div>
 
 		</div>
 
 		<footer>
-			<p>
-				All images belong to <a href="prisroos.com" target="_blank">Pris Roos</a> - adapted by <a href="ivanasetiawan.com" target="_blank">Ivana</a> ~ licensed under <a href="http://creativecommons.org/licenses/by/2.0/">Attribution 2.0 Generic (CC BY 2.0)</a>
-			</p>
-			<p class="small">This article is part of "Motivational people you should check out"</p>
-			<!-- <div class="chameleon-tree"><img src="public/images/chameleon-on-tree.png" alt="Pris Roos - workspace" /></div> -->
+			<div class="chameleon-tree"><img src="public/images/chameleon-on-tree.png" alt="Pris Roos - workspace" /></div>
+			<div class="wrap">
+				<blockquote class="full">"Now The Big Five are endangered because of the greed of the human being. In my concept the five wild animals are warriors in the war against hunters. The enemy is put behind bars, or scared to come out to hurt them. The lion, leopard, rhino, elephant and cape buffalo are victorious."
+				<span>~ Pris Roos</span>
+				</blockquote>			
+				<p>
+					All images belong to <a href="prisroos.com" target="_blank">Pris Roos</a> - adapted by <a href="ivanasetiawan.com" target="_blank">Ivana</a> ~ licensed under <a href="http://creativecommons.org/licenses/by/2.0/">Attribution 2.0 Generic (CC BY 2.0)</a>
+				</p>
+				<p class="small">This article is part of "Motivational people you should check out"</p>
+			</div>
 		</footer>
 
 		<div class="border top"></div>
@@ -101,7 +102,16 @@
 
 
 		<script type="text/javascript" src="public/js/jquery.js"></script>
-		<script type="text/javascript" src="public/js/slider.js"></script>
+		<script src="js/jquery.event.frame.js"></script>
+		<script src="js/jquery.parallax.js"></script>
+		<script>
+		jQuery(document).ready(function(){
+			jQuery('#parallax .parallax-layer')
+			.parallax({
+				mouseport: jQuery('#parallax')
+			});
+		});
+		</script>
 		<script type="text/javascript" src="public/js/application.js"></script>
 	</body>
 
