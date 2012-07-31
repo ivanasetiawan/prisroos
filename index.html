@@ -11,9 +11,9 @@
 		<link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Simonetta:400,900,400italic,900italic' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Averia+Serif+Libre:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
-
 		<link rel="shortcut icon" href="public/images/favicon.ico" type="image/ico">
 
+		<script type="text/javascript" src="public/js/foresight.min.js"></script>
 	</head>
 
 	<body>
@@ -36,7 +36,10 @@
 				</p>
 
 				<figure class="wide">
-					<img src="public/images/pris.jpg" alt="Pris Roos" />
+					<img data-src="public/images/pris.jpg" data-width="500" data-height="380" class="fs-img">
+					<noscript>
+						<img src="public/images/pris.jpg">
+					</noscript>
 					<figcaption>Fig 1: Pris Roos</figcaption>
 				</figure>
 			</div>
@@ -87,7 +90,7 @@
 			<div class="wrap">
 				<blockquote class="full">"Now The Big Five are endangered because of the greed of the human being. In my concept the five wild animals are warriors in the war against hunters. The enemy is put behind bars, or scared to come out to hurt them. The lion, leopard, rhino, elephant and cape buffalo are victorious."
 				<span>~ Pris Roos</span>
-				</blockquote>			
+				</blockquote>
 				<p>
 					All images belong to <a href="prisroos.com" target="_blank">Pris Roos</a> - adapted by <a href="ivanasetiawan.com" target="_blank">Ivana</a> ~ licensed under <a href="http://creativecommons.org/licenses/by/2.0/">Attribution 2.0 Generic (CC BY 2.0)</a>
 				</p>
@@ -102,16 +105,6 @@
 
 
 		<script type="text/javascript" src="public/js/jquery.js"></script>
-		<script src="js/jquery.event.frame.js"></script>
-		<script src="js/jquery.parallax.js"></script>
-		<script>
-		jQuery(document).ready(function(){
-			jQuery('#parallax .parallax-layer')
-			.parallax({
-				mouseport: jQuery('#parallax')
-			});
-		});
-		</script>
 		<script type="text/javascript" src="public/js/application.js"></script>
 	</body>
 

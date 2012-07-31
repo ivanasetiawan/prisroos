@@ -196,7 +196,7 @@ blockquote
     left: 0
 
 footer
-  padding: 0 0 25px 495px
+  padding: 35px 0 25px 495px
   position: relative
   font-size: 1.5em
 
@@ -214,7 +214,7 @@ footer
 .chameleon-tree
   width: 670px
   height: 390px
-  top: 0
+  bottom: 10px
   left: 0
   position: absolute
   z-index: -1
@@ -223,3 +223,10 @@ footer
   width: 320px
   height: 270px
   margin: 0 auto
+
+// Retina foresight.js
+.fs-img
+  font-family: 'image-set( url({src}) 1x low-bandwidth, url({protocol}://{host}{directory}{filename}-2x.{ext}) 2x high-bandwidth )'
+  display: none
+
+@import media
