@@ -17,6 +17,24 @@
 
 		<script type="text/javascript" src="public/js/foresight.min.js"></script>
 		<script src="public/js/modernizr.js"></script>
+	  <!-- Start of Woopra Code -->
+	  <script type="text/javascript">
+	  function woopraReady(tracker) {
+	    tracker.setDomain('ivanasetiawan.com');
+	    tracker.setIdleTimeout(300000);
+	    tracker.track();
+	    return false;
+	  }
+	  (function() {
+	    var wsc = document.createElement('script');
+	    wsc.src = document.location.protocol+'//static.woopra.com/js/woopra.js';
+	    wsc.type = 'text/javascript';
+	    wsc.async = true;
+	    var ssc = document.getElementsByTagName('script')[0];
+	    ssc.parentNode.insertBefore(wsc, ssc);
+	  })();
+	  </script>
+	  <!-- End of Woopra Code -->
 	</head>
 
 	<body>
@@ -117,6 +135,7 @@
 
 		<script type="text/javascript" src="public/js/jquery.js"></script>
 		<script type="text/javascript" src="public/js/application.js"></script>
+
 	</body>
 
 </html>
