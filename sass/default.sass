@@ -50,8 +50,9 @@ body
 a
   color: $alertColor
   text-decoration: none
+
   &:hover
-    text-decoration: underline
+    color: #0070b8
 
 header
   padding-top: 330px
@@ -85,7 +86,6 @@ header
     right: 0
     font-family: $fontFamily
     font-size: 0.12em
-    font-style: italic
 
 .wrap
   max-width: 1000px
@@ -240,7 +240,7 @@ footer
   margin: 0 auto
 
 .share
-  min-width: 245px
+  min-width: 340px
   display: inline-block
   margin: 0 0 30px 80px
   padding: 10px 15px 9px 15px
@@ -255,8 +255,12 @@ footer
     line-height: 31px
 
   > div
-    display: inline-block
+    float: left
     margin: 5px 0 0 10px
+
+    &.last-child
+      width: 85px
+      margin: 0 0 0 10px
 
 /* Foresight */
 .fs-img
